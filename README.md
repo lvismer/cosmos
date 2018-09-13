@@ -5,3 +5,5 @@ A simple demo SPA that uses Vue (using [vue-cli](https://cli.vuejs.org/)) on the
 The aim of the application is to demonstrate serving the frontend and backend from the same domain to avoid preflight CORS request.
 
 The glue so to speak is the ```cosmos.localhost.conf``` *nginx* config file.
+
+Branch [1.0](https://github.com/lvismer/cosmos/tree/1.0) is the version used for the Codementor article.
