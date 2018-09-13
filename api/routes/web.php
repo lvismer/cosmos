@@ -37,7 +37,6 @@ $router->post('/apod', function () {
         $fileToSave = base_path('public/cache/' . $filename);
         $resource = fopen($fileToSave, 'w+');
         $client->request('GET', $data['url'], ['sink' => $resource]);
-        $data['url'] = url('cache/' . $filename);
     }
     
     file_put_contents($cachedFile, json_encode($data));
